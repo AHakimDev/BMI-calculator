@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+// EN
 void main (){
   runApp(MyApp());
 }
@@ -105,7 +105,7 @@ class _MyAppState extends State<MyApp> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     margin: const EdgeInsets.fromLTRB(8, 8, 4, 8),
-                                    padding: const EdgeInsets.all(20),
+                                    padding: const EdgeInsets.all(18),
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(35, 32, 32, 1),
                                       borderRadius: const BorderRadius.all(Radius.circular(8.0)),
@@ -153,7 +153,7 @@ class _MyAppState extends State<MyApp> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     margin: const EdgeInsets.fromLTRB(8, 8, 4, 8),
-                                    padding: const EdgeInsets.all(20),
+                                    padding: const EdgeInsets.all(18),
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(35, 32, 32, 1),
                                       borderRadius: const BorderRadius.all(Radius.circular(8.0)),
@@ -265,7 +265,7 @@ class _MyAppState extends State<MyApp> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     margin: const EdgeInsets.fromLTRB(8, 8, 4, 8),
-                                    padding: const EdgeInsets.all(20),
+                                    padding: const EdgeInsets.all(18),
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(35, 32, 32, 1),
                                       borderRadius: const BorderRadius.all(Radius.circular(8.0)),
@@ -327,7 +327,7 @@ class _MyAppState extends State<MyApp> {
                                   fit: FlexFit.tight,
                                   child: Container(
                                     margin: const EdgeInsets.fromLTRB(8, 8, 4, 8),
-                                    padding: const EdgeInsets.all(20),
+                                    padding: const EdgeInsets.all(18),
                                     decoration: BoxDecoration(
                                       color: const Color.fromRGBO(35, 32, 32, 1),
                                       borderRadius: const BorderRadius.all(Radius.circular(8.0)),
@@ -387,7 +387,7 @@ class _MyAppState extends State<MyApp> {
                               ],
                             ),
 
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 10),
                             // ================= CALCULATE (UNCHANGED) =================
                             SizedBox(
                               width: double.infinity,
@@ -459,7 +459,7 @@ class _MyAppState extends State<MyApp> {
                                 ),
                               ),
                             ),
-                            const SizedBox(height: 10),
+                            const SizedBox(height: 8),
                             if (bmiResult.isNotEmpty)
                               ConstrainedBox(
                                 constraints: const BoxConstraints(
