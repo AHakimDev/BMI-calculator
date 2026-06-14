@@ -43,3 +43,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Keystore and App Signing Files
+key.properties
+*.jks
+*.keystore
+
+# Flutter plugins
+.flutter-plugins
+
+# Windows build files
+windows/flutter/ephemeral/
+
+# Environment variables (برای پروژه‌های آینده که API Key دارند)
+.env
