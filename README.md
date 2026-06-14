@@ -20,10 +20,15 @@ A sleek, highly customizable, and bilingual (English/Farsi) Body Mass Index (BMI
 *   **Assets:** Custom TTF Fonts & `flutter_svg`
 
 ## 📸 Screenshots
-*(Add your app screenshots here by dragging and dropping image files into this section)*
 
 *   **Left:** English Interface & Default Theme
+<img width="1080" height="2302" alt="IMG_20260615_000707" src="https://github.com/user-attachments/assets/38366136-b6a7-4e84-8239-b7838a413638" />
+
+
+
 *   **Right:** Farsi Interface & Custom Typography
+<img width="1080" height="2311" alt="IMG_20260615_000733" src="https://github.com/user-attachments/assets/811d009d-a3b2-4fbd-9726-e475c29ea3a6" />
+
 
 ## 💻 Getting Started
 
