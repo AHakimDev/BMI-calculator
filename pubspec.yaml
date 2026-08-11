@@ -81,28 +81,17 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: ETimes
+    - family: Poppins
       fonts:
-        - asset: fonts/times.ttf
-          weight: 400
-
-        - asset: fonts/timesbd.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
           weight: 700
 
-        - asset: fonts/timesi.ttf
-          style: italic
-
-        - asset: fonts/timesbi.ttf
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
           weight: 700
-          style: italic
-
-    - family: BNazanin
-      fonts:
-        - asset: fonts/BNazanin.ttf
-
-    - family: BTitr
-      fonts:
-        - asset: fonts/BTitr.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
@@ -119,6 +108,11 @@ flutter:
 flutter_launcher_icons:
   android: true
   ios: true
+  web:
+    generate: true
+    image_path: "assets/icon.png"
+    background_color: "#0A0E21"
+    theme_color: "#00BFA5"
   image_path: "assets/icon.png"
   adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/icon.png"

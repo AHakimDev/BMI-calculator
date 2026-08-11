@@ -8,7 +8,7 @@ void main() {
   testWidgets('تست عملکرد اصلی اپلیکیشن BMI', (WidgetTester tester) async {
 
     // ۱. اجرای مجازی اپلیکیشن شما
-    await tester.pumpWidget(const BMICalculatorApp());
+    await tester.pumpWidget(const BMICalculatorApp(initialLanguage: false));
 
     // ۲. بررسی لود شدن زبان پیش‌فرض (انگلیسی)
     expect(find.text('BMI CALCULATOR'), findsOneWidget);
@@ -43,8 +43,8 @@ void main() {
     expect(find.text('Your status is'), findsOneWidget);
     expect(find.text('Analyze'), findsOneWidget);
 
-    // ۸. شبیه‌سازی بستن دیالوگ
-    await tester.tap(find.text('Dismiss'));
+    // ۸. شبیه‌سازی بستن دیالوگ با آیکون ضربدر
+    await tester.tap(find.byIcon(Icons.close));
     await tester.pumpAndSettle(); // صبر برای پایان انیمیشنِ بسته شدن
 
     // ۹. اطمینان از بسته شدن دیالوگ
