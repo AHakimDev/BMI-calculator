@@ -1,46 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Professional BMI Calculator App">
+
+  <!-- Primary Meta Tags -->
+  <title>BMI Calculator</title>
+  <meta name="title" content="BMI Calculator">
+  <meta name="description" content="A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built with Flutter.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BMI Calculator">
+  <meta property="og:description" content="A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built with Flutter.">
+  <meta property="og:image" content="https://bmi.hakimdev.ir/icons/Icon-512.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="BMI Calculator">
+  <meta property="twitter:description" content="A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built with Flutter.">
+  <meta property="twitter:image" content="https://bmi.hakimdev.ir/icons/Icon-512.png">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="BMI Calculator">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
+  <!-- Favicon & Manifest -->
   <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>BMI Calculator</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- ========================================== -->
+  <!-- Preload Fonts (جلوگیری از چارخونه شدن متون) -->
+  <!-- ========================================== -->
+  <link rel="preload" href="assets/assets/fonts/Vazirmatn-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="assets/assets/fonts/Vazirmatn-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="assets/assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="assets/assets/fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <!-- استایل لودینگ اختصاصی -->
+  <style>
+    body {
+      background-color: #0b0f19;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .loading-container {
+      text-align: center;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(46, 204, 113, 0.1);
+      border-radius: 50%;
+      border-top-color: #2ecc71;
+      animation: spin 1s ease-in-out infinite;
+      margin: 0 auto 15px;
+    }
+    .loading-text {
+      color: #94a3b8;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+<div id="loading-indicator" class="loading-container">
+  <div class="spinner"></div>
+  <div class="loading-text">Loading BMI Calculator...</div>
+</div>
+
+<script src="flutter_bootstrap.js" async></script>
+
+<script>
+  window.addEventListener('flutter-first-frame', function () {
+    var indicator = document.getElementById('loading-indicator');
+    if (indicator) {
+      indicator.remove();
+    }
+  });
+</script>
 </body>
 </html>
