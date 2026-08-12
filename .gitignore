@@ -57,3 +57,6 @@ windows/flutter/ephemeral/
 
 # Environment variables (برای پروژه‌های آینده که API Key دارند)
 .env
+
+# Cafe Bazaar Bundlesigner output
+*.bin
