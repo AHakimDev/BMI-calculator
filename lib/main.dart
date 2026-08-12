@@ -1,14 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/services.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:ui';
 import 'package:shared_preferences/shared_preferences.dart';
 
+Future<void> _preloadFonts() async {
+  // بارگذاری هر دو خانواده فونت برای وب تا در هنگام سوئیچ کردن لرزش نداشته باشیم
+  final vazirLoader = FontLoader('Vazirmatn');
+  vazirLoader.addFont(rootBundle.load('assets/fonts/Vazirmatn-Regular.ttf'));
+  vazirLoader.addFont(rootBundle.load('assets/fonts/Vazirmatn-Bold.ttf'));
+  
+  final poppinsLoader = FontLoader('Poppins');
+  poppinsLoader.addFont(rootBundle.load('assets/fonts/Poppins-Regular.ttf'));
+  poppinsLoader.addFont(rootBundle.load('assets/fonts/Poppins-Bold.ttf'));
+  
+  await Future.wait([
+    vazirLoader.load(),
+    poppinsLoader.load(),
+  ]);
+}
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  bool savedLanguage = prefs.getBool('isFarsi') ?? false;
+  
+  // قرار دادن فارسی به عنوان زبان پیش‌فرض
+  if (!prefs.containsKey('isFarsi')) {
+    await prefs.setBool('isFarsi', true);
+  }
+  
+  bool savedLanguage = prefs.getBool('isFarsi') ?? true;
+  
+  // بارگذاری فونت‌ها قبل از اجرای برنامه
+  await _preloadFonts();
+  
   runApp(BMICalculatorApp(initialLanguage: savedLanguage));
 }
 
@@ -56,6 +83,7 @@ class _BMICalculatorAppState extends State<BMICalculatorApp> {
       theme: ThemeData(
         brightness: Brightness.dark,
         fontFamily: defaultFont,
+        fontFamilyFallback: const ['Vazirmatn', 'Poppins', 'Roboto', 'Arial', 'sans-serif'],
         scaffoldBackgroundColor: const Color(0xFF0A0E21),
         appBarTheme: AppBarTheme(
           backgroundColor: const Color(0xFF0A0E21),
