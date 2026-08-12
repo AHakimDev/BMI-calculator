@@ -3,6 +3,7 @@
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.44+-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-3.12+-blue?logo=dart)
+[![Cafe Bazaar](https://img.shields.io/badge/Download_on-Cafe_Bazaar-16a34a?style=for-the-badge&logo=android&logoColor=white)](http://cafebazaar.ir/app/?id=com.hakim.bmicalculator&ref=share)
 
 A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built with Flutter. This application provides real-time BMI calculations, smart medical advice based on age and gender, an interactive history system, and a dynamic bilingual (English/Farsi) interface.
 
@@ -63,6 +64,8 @@ To run this project locally, follow these steps:
 
 ## 🇮🇷 فارسی
 [🇬🇧 Read this in English](#️-bmi-calculator-bilingual--multi-platform)
+
+[![Cafe Bazaar](https://img.shields.io/badge/Download_on-Cafe_Bazaar-16a34a?style=for-the-badge&logo=android&logoColor=white)](http://cafebazaar.ir/app/?id=com.hakim.bmicalculator&ref=share)
 
 یک اپلیکیشن زیبا، مدرن و کاملاً رسپانسیو برای محاسبه شاخص توده بدنی (BMI) که با فلاتر ساخته شده است. این برنامه محاسبه لحظه‌ای BMI، توصیه‌های پزشکی هوشمند بر اساس سن و جنسیت، سیستم تاریخچه تعاملی، و یک رابط کاربری پویای دو زبانه (انگلیسی/فارسی) را ارائه می‌دهد.
 
