@@ -10,8 +10,9 @@ A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built wit
 ## 📸 Screenshots (English Interface)
 
 <p align="center">
-  <img src="screenshots/en-modal.png" alt="English Screen - Analyze Modal" width="250" style="margin-right: 10px;" />
-  <img src="screenshots/en-history.png" alt="English Screen - History" width="250" />
+  <img src="screenshots/en-analyze.webp" alt="English Screen - Analyze" width="250" style="margin-right: 10px;" />
+  <img src="screenshots/en-modal.webp" alt="English Screen - Analyze Modal" width="250" style="margin-right: 10px;" />
+  <img src="screenshots/en-history.webp" alt="English Screen - History" width="250" />
 </p>
 
 ## ✨ Features
@@ -31,9 +32,9 @@ A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built wit
 * High Accuracy: Calculates BMI based on global health standards.
 * Visual BMI Gauge: Graphical representation of the user's status on a color spectrum (blue to red) with an animated indicator.
 * Smart Medical Advice: Provides tailored analysis considering:
-   - Gender: Differentiated advice for men and women.
-   - Age Limits: Recognizes age boundaries (under 20 and over 60).
-   - Target Weight: Calculates the exact kilograms needed to lose or gain to reach a healthy weight range.
+    - Gender: Differentiated advice for men and women.
+    - Age Limits: Recognizes age boundaries (under 20 and over 60).
+    - Target Weight: Calculates the exact kilograms needed to lose or gain to reach a healthy weight range.
 
 ### 🕒 Interactive History System
 * Persistent Storage: Saves the last 10 calculations locally using shared_preferences.
@@ -72,8 +73,9 @@ To run this project locally, follow these steps:
 ## 📸 تصاویر محیط برنامه (رابط کاربری فارسی)
 
 <p align="center">
-  <img src="screenshots/fa-modal.png" alt="Persian Screen - Analyze Modal" width="250" style="margin-left: 10px;" />
-  <img src="screenshots/fa-history.png" alt="Persian Screen - History" width="250" />
+  <img src="screenshots/fa-analyze.webp" alt="Persian Screen - Analyze" width="250" style="margin-left: 10px;" />
+  <img src="screenshots/fa-modal.webp" alt="Persian Screen - Analyze Modal" width="250" style="margin-left: 10px;" />
+  <img src="screenshots/fa-history.webp" alt="Persian Screen - History" width="250" />
 </p>
 
 ## ✨ ویژگی‌ها و امکانات
@@ -95,9 +97,9 @@ To run this project locally, follow these steps:
 * دقت بالا: محاسبه BMI بر اساس استانداردهای جهانی.
 * نوار وضعیت بصری (BMI Gauge): نمایش گرافیکی وضعیت کاربر روی یک نوار طیف رنگی (از آبی تا قرمز) با نشانگر متحرک.
 * توصیه‌های پزشکی هوشمند: ارائه تحلیل دقیق و اختصاصی بر اساس:
-   - جنسیت: توصیه‌های متفاوت برای زنان و مردان.
-   - رده سنی: تشخیص محدودیت‌های سنی (زیر ۲۰ سال و بالای ۶۰ سال).
-   - هدف‌گذاری وزنی: اعلام دقیق مقدار کیلوگرم مورد نیاز برای کاهش یا افزایش وزن جهت رسیدن به محدوده سلامت.
+    - جنسیت: توصیه‌های متفاوت برای زنان و مردان.
+    - رده سنی: تشخیص محدودیت‌های سنی (زیر ۲۰ سال و بالای ۶۰ سال).
+    - هدف‌گذاری وزنی: اعلام دقیق مقدار کیلوگرم مورد نیاز برای کاهش یا افزایش وزن جهت رسیدن به محدوده سلامت.
 
 ### 🕒 سیستم تاریخچه پیشرفته (Advanced History)
 * ذخیره‌سازی دائمی: نگهداری ۱۰ محاسبه آخر در حافظه گوشی با استفاده از shared_preferences.
