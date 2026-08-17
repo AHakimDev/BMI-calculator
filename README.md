@@ -9,11 +9,10 @@ A sleek, modern, and fully responsive Body Mass Index (BMI) calculator built wit
 
 ## 📸 Screenshots (English Interface)
 
-<p align="center">
-  <img src="screenshots/en-analyze.webp" alt="English Screen - Analyze" width="250" style="margin-right: 10px;" />
-  <img src="screenshots/en-modal.webp" alt="English Screen - Analyze Modal" width="250" style="margin-right: 10px;" />
-  <img src="screenshots/en-history.webp" alt="English Screen - History" width="250" />
-</p>
+<!-- بخش انگلیسی -->
+| Analyze | Analyze Modal | History |
+| :---: | :---: | :---: |
+| <img src="screenshots/en-analyze.webp" width="230" alt="English Screen - Analyze" /> | <img src="screenshots/en-modal.webp" width="230" alt="English Screen - Analyze Modal" /> | <img src="screenshots/en-history.webp" width="230" alt="English Screen - History" /> |
 
 ## ✨ Features
 
@@ -72,11 +71,10 @@ To run this project locally, follow these steps:
 
 ## 📸 تصاویر محیط برنامه (رابط کاربری فارسی)
 
-<p align="center">
-  <img src="screenshots/fa-analyze.webp" alt="Persian Screen - Analyze" width="250" style="margin-left: 10px;" />
-  <img src="screenshots/fa-modal.webp" alt="Persian Screen - Analyze Modal" width="250" style="margin-left: 10px;" />
-  <img src="screenshots/fa-history.webp" alt="Persian Screen - History" width="250" />
-</p>
+<!-- بخش فارسی -->
+| صفحه تحلیل | مودال تحلیل | تاریخچه |
+| :---: | :---: | :---: |
+| <img src="screenshots/fa-analyze.webp" width="230" alt="Persian Screen - Analyze" /> | <img src="screenshots/fa-modal.webp" width="230" alt="Persian Screen - Analyze Modal" /> | <img src="screenshots/fa-history.webp" width="230" alt="Persian Screen - History" /> |
 
 ## ✨ ویژگی‌ها و امکانات
 
